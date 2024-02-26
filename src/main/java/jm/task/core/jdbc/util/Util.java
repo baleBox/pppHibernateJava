@@ -25,9 +25,8 @@ public class Util {
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             try {
-                Configuration configuration = new Configuration();
-                Properties properties = new Properties();
 
+                Properties properties = new Properties();
                 properties.put(Environment.DRIVER, DRIVER);
                 properties.put(Environment.URL, DB_URL);
                 properties.put(Environment.USER, DB_USERNAME);
@@ -36,6 +35,7 @@ public class Util {
                 properties.put(Environment.SHOW_SQL, "true");
                 properties.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
 
+                Configuration configuration = new Configuration();
                 configuration.setProperties(properties);
                 configuration.addAnnotatedClass(User.class);
 

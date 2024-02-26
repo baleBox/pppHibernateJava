@@ -11,7 +11,7 @@ import java.util.List;
 
 
 public class UserDaoHibernateImpl extends Util implements UserDao {
-    private static final SessionFactory FACTORY = getSessionFactory();
+
     private static final String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS Users (" +
             "id INT PRIMARY KEY AUTO_INCREMENT," +
             "name VARCHAR(255) NOT NULL," +
@@ -21,6 +21,7 @@ public class UserDaoHibernateImpl extends Util implements UserDao {
     private static final String DROP_TABLE = "DROP TABLE IF EXISTS Users";
     private static final String CLEAR = "TRUNCATE TABLE Users";
     private Transaction transaction = null;
+    private static final SessionFactory FACTORY = getSessionFactory();
 
     public UserDaoHibernateImpl() {
 
