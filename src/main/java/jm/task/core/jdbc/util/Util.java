@@ -19,6 +19,7 @@ public class Util {
     private static final String DB_USERNAME = "rootroot";
     private static final String DB_PASSWORD = "rootroot";
     private static final String DIALECT = "org.hibernate.dialect.MySQLDialect";
+
     private static org.hibernate.SessionFactory sessionFactory;
 
     public static SessionFactory getSessionFactory() {
