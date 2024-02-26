@@ -64,7 +64,7 @@ public class UserDaoHibernateImpl extends Util implements UserDao {
             session.save(new User(name, lastName, age));
 
             transaction.commit();
-            System.out.println("User " + name + "saved.");
+            System.out.println("User " + name + " saved.");
         } catch (HibernateException e) {
             e.getStackTrace();
             transaction.rollback();
