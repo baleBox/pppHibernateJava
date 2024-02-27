@@ -1,8 +1,8 @@
-D:\idea\PP_1_1_5_Hibernate\src\main\java\jm\task\core\jdbc\dao\UserDao.java
-D:\idea\PP_1_1_5_Hibernate\src\main\java\jm\task\core\jdbc\dao\UserDaoHibernateImpl.java
-D:\idea\PP_1_1_5_Hibernate\src\main\java\jm\task\core\jdbc\dao\UserDaoJDBCImpl.java
-D:\idea\PP_1_1_5_Hibernate\src\main\java\jm\task\core\jdbc\Main.java
-D:\idea\PP_1_1_5_Hibernate\src\main\java\jm\task\core\jdbc\model\User.java
-D:\idea\PP_1_1_5_Hibernate\src\main\java\jm\task\core\jdbc\service\UserService.java
-D:\idea\PP_1_1_5_Hibernate\src\main\java\jm\task\core\jdbc\service\UserServiceImpl.java
-D:\idea\PP_1_1_5_Hibernate\src\main\java\jm\task\core\jdbc\util\Util.java
+D:\idea\pppHibernateJava\src\main\java\jm\task\core\jdbc\dao\UserDao.java
+D:\idea\pppHibernateJava\src\main\java\jm\task\core\jdbc\dao\UserDaoHibernateImpl.java
+D:\idea\pppHibernateJava\src\main\java\jm\task\core\jdbc\dao\UserDaoJDBCImpl.java
+D:\idea\pppHibernateJava\src\main\java\jm\task\core\jdbc\Main.java
+D:\idea\pppHibernateJava\src\main\java\jm\task\core\jdbc\model\User.java
+D:\idea\pppHibernateJava\src\main\java\jm\task\core\jdbc\service\UserService.java
+D:\idea\pppHibernateJava\src\main\java\jm\task\core\jdbc\service\UserServiceImpl.java
+D:\idea\pppHibernateJava\src\main\java\jm\task\core\jdbc\util\Util.java
