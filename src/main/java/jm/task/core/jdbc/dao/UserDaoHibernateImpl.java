@@ -19,7 +19,7 @@ public class UserDaoHibernateImpl extends Util implements UserDao {
             "age INT NOT NULL" +
             ")";
     private static final String DROP_TABLE = "DROP TABLE IF EXISTS Users";
-    private static final String CLEAR = "TRUNCATE TABLE Users";
+    private static final String CLEAR = "TRUNCATE TABLE Users ";
     private Transaction transaction = null;
     private static final SessionFactory FACTORY = getSessionFactory();
 
@@ -32,7 +32,7 @@ public class UserDaoHibernateImpl extends Util implements UserDao {
         try (Session session = FACTORY.openSession()) {
             transaction = session.beginTransaction();
 
-            session.createSQLQuery(CREATE_TABLE)
+            session.createNativeQuery(CREATE_TABLE)
                     .executeUpdate();
 
             transaction.commit();
@@ -47,7 +47,7 @@ public class UserDaoHibernateImpl extends Util implements UserDao {
         try (Session session = FACTORY.openSession()) {
             transaction = session.beginTransaction();
 
-            session.createSQLQuery(DROP_TABLE)
+            session.createNativeQuery(DROP_TABLE)
                     .executeUpdate();
 
             transaction.commit();
@@ -112,7 +112,7 @@ public class UserDaoHibernateImpl extends Util implements UserDao {
         try (Session session = FACTORY.openSession()) {
             transaction = session.beginTransaction();
 
-            session.createSQLQuery(CLEAR)
+            session.createNativeQuery(CLEAR)
                     .executeUpdate();
 
             transaction.commit();
