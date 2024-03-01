@@ -19,7 +19,8 @@ public class UserDaoHibernateImpl extends Util implements UserDao {
             "age INT NOT NULL" +
             ")";
     private static final String DROP_TABLE = "DROP TABLE IF EXISTS Users";
-    private static final String CLEAR = "TRUNCATE TABLE Users ";
+    private static final String CLEAR = "TRUNCATE TABLE Users";
+
     private Transaction transaction = null;
     private static final SessionFactory FACTORY = getSessionFactory();
 
